@@ -6,10 +6,7 @@ import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Pattern;
+import javax.validation.constraints.*;
 import java.util.Date;
 
 /**
@@ -39,12 +36,14 @@ public class Item {
     private String category;
 
     @Min(value = 0, message = "quantity must be larger than 0")
+    @Digits(message = "quantity must be a non-negative integer number", integer = 32, fraction = 0)
     @NotNull(message = "quantity is required")
     private long quantity;
 
     private String comment;
 
-    @Min(value = 0, message = "price must above 0")
+    @Min(value = 0, message = "price must be larger 0")
+    @Digits(message = "price must ba a non-negative number", integer = 32, fraction = 2)
     @NotNull(message = "price is required")
     private double price;
 

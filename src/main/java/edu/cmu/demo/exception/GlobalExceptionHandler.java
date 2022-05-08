@@ -1,5 +1,6 @@
 package edu.cmu.demo.exception;
 
+import edu.cmu.demo.util.Response;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.MessageSourceResolvable;
 import org.springframework.context.support.DefaultMessageSourceResolvable;
@@ -33,42 +34,42 @@ import java.util.stream.Collectors;
 public class GlobalExceptionHandler {
 
     @ExceptionHandler(value = ParseException.class)
-    public ResponseEntity<ErrorResponse> parseExceptionHandler(ParseException e) {
-        ErrorResponse response = new ErrorResponse("internal server error");
+    public ResponseEntity<Response> parseExceptionHandler(ParseException e) {
         log.error("time parse exception --------------{}" , e.getMessage());
-        return new ResponseEntity(response, HttpStatus.INTERNAL_SERVER_ERROR);
+        return new ResponseEntity(new Response("time parser error", null), HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
-//    @ExceptionHandler(value = RuntimeException.class)
-//    public ResponseEntity<ErrorResponse> runtimeExceptionHandler(RuntimeException e) {
-//        ErrorResponse response = new ErrorResponse("internal server error");
-//        log.error("runtime exception --------------{}" , e.getMessage());
-//        return new ResponseEntity(response, HttpStatus.INTERNAL_SERVER_ERROR);
-//    }
+    @ExceptionHandler(value = RuntimeException.class)
+    public ResponseEntity<Response> runtimeExceptionHandler(RuntimeException e) {
+        log.error("runtime exception --------------{}" , e.getMessage());
+        return new ResponseEntity(new Response("runtime exception", null), HttpStatus.INTERNAL_SERVER_ERROR);
+    }
 
     @ExceptionHandler(value = ConstraintViolationException.class)
-    public ResponseEntity<ErrorResponse> queryParameterNotValidHandler(ConstraintViolationException e) {
-        ErrorResponse response = new ErrorResponse("query parameter missing or not valid");
+    public ResponseEntity<Response> queryParameterNotValidHandler(ConstraintViolationException e) {
         log.error("query parameter not valid --------------{}" , e.getMessage());
-        return new ResponseEntity(response, HttpStatus.BAD_REQUEST);
+        return new ResponseEntity(new Response("query parameter missing or not valid", null), HttpStatus.BAD_REQUEST);
     }
 
     @ExceptionHandler(value = WebExchangeBindException.class)
-    public ResponseEntity<List<String>> postArgumentNotValidHandler(WebExchangeBindException e) {
+    public ResponseEntity<Response> postArgumentNotValidHandler(WebExchangeBindException e) {
         log.error("post request body argument not valid exception --------------{}" , e.getMessage());
         List<String> errors = e.getBindingResult()
                 .getAllErrors()
                 .stream()
                 .map(MessageSourceResolvable::getDefaultMessage)
                 .collect(Collectors.toList());
-        return new ResponseEntity(errors, HttpStatus.BAD_REQUEST);
+        String error = "";
+        for (String err : errors) {
+            error += err + ", ";
+        }
+        return new ResponseEntity(new Response(error, null), HttpStatus.BAD_REQUEST);
     }
 
     @ExceptionHandler(value = IllegalArgumentException.class)
-    public ResponseEntity<ErrorResponse> IllegalArgumentExceptionHandler(IllegalArgumentException e) {
-        ErrorResponse response = new ErrorResponse("request has illegal argument");
+    public ResponseEntity<Response> IllegalArgumentExceptionHandler(IllegalArgumentException e) {
         log.error("Illegal Argument Exception --------------{}", e.getMessage());
-        return new ResponseEntity(response, HttpStatus.BAD_REQUEST);
+        return new ResponseEntity(new Response("request has illegal argument", null), HttpStatus.BAD_REQUEST);
     }
 
 }
