@@ -11,4 +11,5 @@
 ###Entity/POJO: Item
 ###Repository: ItemRepo
 ###Common Util: Response wrapper: Response, Time related: TimeUtil
+###Exception Handler: GlobalExceptionHandler
 ###Config: application.properties

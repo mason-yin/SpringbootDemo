@@ -33,24 +33,44 @@ import java.util.stream.Collectors;
 @ResponseBody
 public class GlobalExceptionHandler {
 
+    /**
+     * handle time format parse exception
+     * @param e ParseException
+     * @return error message wrapped by response with status code 500
+     */
     @ExceptionHandler(value = ParseException.class)
     public ResponseEntity<Response> parseExceptionHandler(ParseException e) {
         log.error("time parse exception --------------{}" , e.getMessage());
-        return new ResponseEntity(new Response("time parser error", null), HttpStatus.INTERNAL_SERVER_ERROR);
+        return new ResponseEntity(new Response("time format parser error", null), HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
+    /**
+     * handle runtime exception
+     * @param e RuntimeException
+     * @return error message wrapped by response with status code 500
+     */
     @ExceptionHandler(value = RuntimeException.class)
     public ResponseEntity<Response> runtimeExceptionHandler(RuntimeException e) {
         log.error("runtime exception --------------{}" , e.getMessage());
         return new ResponseEntity(new Response("runtime exception", null), HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
+    /**
+     * handle get request parameter not valid exception
+     * @param e ConstraintViolationException
+     * @return error message wrapped by response with status code 400, indicating a bad request
+     */
     @ExceptionHandler(value = ConstraintViolationException.class)
     public ResponseEntity<Response> queryParameterNotValidHandler(ConstraintViolationException e) {
         log.error("query parameter not valid --------------{}" , e.getMessage());
         return new ResponseEntity(new Response("query parameter missing or not valid", null), HttpStatus.BAD_REQUEST);
     }
 
+    /**
+     * handle post request body parameter not valid exception
+     * @param e WebExchangeBindException
+     * @return error message wrapped by response with status code 400, indicating a bad request
+     */
     @ExceptionHandler(value = WebExchangeBindException.class)
     public ResponseEntity<Response> postArgumentNotValidHandler(WebExchangeBindException e) {
         log.error("post request body argument not valid exception --------------{}" , e.getMessage());
@@ -66,6 +86,11 @@ public class GlobalExceptionHandler {
         return new ResponseEntity(new Response(error, null), HttpStatus.BAD_REQUEST);
     }
 
+    /**
+     * handle illegal argument exception
+     * @param e IllegalArgumentException
+     * @return error message wrapped by response with status code 400, indicating a bad request
+     */
     @ExceptionHandler(value = IllegalArgumentException.class)
     public ResponseEntity<Response> IllegalArgumentExceptionHandler(IllegalArgumentException e) {
         log.error("Illegal Argument Exception --------------{}", e.getMessage());

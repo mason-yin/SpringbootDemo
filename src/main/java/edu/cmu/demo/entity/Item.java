@@ -2,7 +2,6 @@ package edu.cmu.demo.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -10,7 +9,7 @@ import javax.validation.constraints.*;
 import java.util.Date;
 
 /**
- * @description: [entity/POJO class for Item]
+ * @description: [entity/POJO class for Item, each field annotated with validation rules]
  * @author: [ysx]
  * @version: [v1.0]
  * @createTime: [2022/5/4 16:20]
