@@ -1,0 +1,581 @@
+[{
+  "_id": {
+    "$oid": "627855c7b727f7143e9ba2ab"
+  },
+  "name": "whiteegg",
+  "category": "dairy",
+  "quantity": 100,
+  "comment": "supreme whiteegg",
+  "price": 11.34,
+  "createTime": {
+    "$date": {
+      "$numberLong": "1652053447114"
+    }
+  },
+  "lastUpdatedTime": {
+    "$date": {
+      "$numberLong": "1652053447114"
+    }
+  },
+  "_class": "edu.cmu.demo.entity.Item"
+},{
+  "_id": {
+    "$oid": "6278561eb727f7143e9ba2ac"
+  },
+  "name": "milk",
+  "category": "dairy",
+  "quantity": 113,
+  "comment": "delicious milk",
+  "price": 3.5,
+  "createTime": {
+    "$date": {
+      "$numberLong": "1652053534639"
+    }
+  },
+  "lastUpdatedTime": {
+    "$date": {
+      "$numberLong": "1652053534639"
+    }
+  },
+  "_class": "edu.cmu.demo.entity.Item"
+},{
+  "_id": {
+    "$oid": "62785650b727f7143e9ba2ad"
+  },
+  "name": "yogurt",
+  "category": "dairy",
+  "quantity": 89,
+  "comment": "loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong comment",
+  "price": 8.99,
+  "createTime": {
+    "$date": {
+      "$numberLong": "1652053584122"
+    }
+  },
+  "lastUpdatedTime": {
+    "$date": {
+      "$numberLong": "1652053584122"
+    }
+  },
+  "_class": "edu.cmu.demo.entity.Item"
+},{
+  "_id": {
+    "$oid": "627856c4b727f7143e9ba2ae"
+  },
+  "name": "cream",
+  "category": "dairy",
+  "quantity": 12,
+  "comment": "",
+  "price": 3,
+  "createTime": {
+    "$date": {
+      "$numberLong": "1652053700452"
+    }
+  },
+  "lastUpdatedTime": {
+    "$date": {
+      "$numberLong": "1652053700452"
+    }
+  },
+  "_class": "edu.cmu.demo.entity.Item"
+},{
+  "_id": {
+    "$oid": "6278578fb727f7143e9ba2af"
+  },
+  "name": "cheese",
+  "category": "dairy",
+  "quantity": 14,
+  "comment": "sweet cheese",
+  "price": 3.55,
+  "createTime": {
+    "$date": {
+      "$numberLong": "1652053903495"
+    }
+  },
+  "lastUpdatedTime": {
+    "$date": {
+      "$numberLong": "1652053903495"
+    }
+  },
+  "_class": "edu.cmu.demo.entity.Item"
+},{
+  "_id": {
+    "$oid": "627857b4b727f7143e9ba2b0"
+  },
+  "name": "redegg",
+  "category": "dairy",
+  "quantity": 14567,
+  "comment": "bunches of redegg",
+  "price": 3,
+  "createTime": {
+    "$date": {
+      "$numberLong": "1652053940967"
+    }
+  },
+  "lastUpdatedTime": {
+    "$date": {
+      "$numberLong": "1652053940967"
+    }
+  },
+  "_class": "edu.cmu.demo.entity.Item"
+},{
+  "_id": {
+    "$oid": "627857d7b727f7143e9ba2b1"
+  },
+  "name": "bacon",
+  "category": "meat",
+  "quantity": 134,
+  "comment": "baconconconconconcon",
+  "price": 9.99,
+  "createTime": {
+    "$date": {
+      "$numberLong": "1652053975321"
+    }
+  },
+  "lastUpdatedTime": {
+    "$date": {
+      "$numberLong": "1652053975321"
+    }
+  },
+  "_class": "edu.cmu.demo.entity.Item"
+},{
+  "_id": {
+    "$oid": "627857ffb727f7143e9ba2b2"
+  },
+  "name": "beef",
+  "category": "meat",
+  "quantity": 1223,
+  "comment": "testest",
+  "price": 3.45,
+  "createTime": {
+    "$date": {
+      "$numberLong": "1652054015738"
+    }
+  },
+  "lastUpdatedTime": {
+    "$date": {
+      "$numberLong": "1652054015738"
+    }
+  },
+  "_class": "edu.cmu.demo.entity.Item"
+},{
+  "_id": {
+    "$oid": "62785814b727f7143e9ba2b3"
+  },
+  "name": "steak",
+  "category": "meat",
+  "quantity": 3498,
+  "comment": "rare steak\n",
+  "price": 3.79,
+  "createTime": {
+    "$date": {
+      "$numberLong": "1652054036843"
+    }
+  },
+  "lastUpdatedTime": {
+    "$date": {
+      "$numberLong": "1652054036843"
+    }
+  },
+  "_class": "edu.cmu.demo.entity.Item"
+},{
+  "_id": {
+    "$oid": "627858d1b727f7143e9ba2b4"
+  },
+  "name": "chicken",
+  "category": "meat",
+  "quantity": 456,
+  "comment": "chicken tender",
+  "price": 33.4,
+  "createTime": {
+    "$date": {
+      "$numberLong": "1652054225580"
+    }
+  },
+  "lastUpdatedTime": {
+    "$date": {
+      "$numberLong": "1652054225580"
+    }
+  },
+  "_class": "edu.cmu.demo.entity.Item"
+},{
+  "_id": {
+    "$oid": "627858f6b727f7143e9ba2b5"
+  },
+  "name": "lamb",
+  "category": "meat",
+  "quantity": 355,
+  "comment": "raw lamb",
+  "price": 3.99,
+  "createTime": {
+    "$date": {
+      "$numberLong": "1652054262061"
+    }
+  },
+  "lastUpdatedTime": {
+    "$date": {
+      "$numberLong": "1652054262061"
+    }
+  },
+  "_class": "edu.cmu.demo.entity.Item"
+},{
+  "_id": {
+    "$oid": "62785914b727f7143e9ba2b6"
+  },
+  "name": "pork",
+  "category": "meat",
+  "quantity": 198,
+  "comment": "",
+  "price": 8.79,
+  "createTime": {
+    "$date": {
+      "$numberLong": "1652054292121"
+    }
+  },
+  "lastUpdatedTime": {
+    "$date": {
+      "$numberLong": "1652054292121"
+    }
+  },
+  "_class": "edu.cmu.demo.entity.Item"
+},{
+  "_id": {
+    "$oid": "62785928b727f7143e9ba2b7"
+  },
+  "name": "clam",
+  "category": "seafood",
+  "quantity": 34,
+  "comment": "clam",
+  "price": 1.99,
+  "createTime": {
+    "$date": {
+      "$numberLong": "1652054312087"
+    }
+  },
+  "lastUpdatedTime": {
+    "$date": {
+      "$numberLong": "1652054312087"
+    }
+  },
+  "_class": "edu.cmu.demo.entity.Item"
+},{
+  "_id": {
+    "$oid": "62785948b727f7143e9ba2b8"
+  },
+  "name": "crab",
+  "category": "seafood",
+  "quantity": 341,
+  "comment": "",
+  "price": 2.99,
+  "createTime": {
+    "$date": {
+      "$numberLong": "1652054344300"
+    }
+  },
+  "lastUpdatedTime": {
+    "$date": {
+      "$numberLong": "1652054344300"
+    }
+  },
+  "_class": "edu.cmu.demo.entity.Item"
+},{
+  "_id": {
+    "$oid": "62785960b727f7143e9ba2b9"
+  },
+  "name": "lobster",
+  "category": "seafood",
+  "quantity": 100,
+  "comment": "",
+  "price": 0.75,
+  "createTime": {
+    "$date": {
+      "$numberLong": "1652054368543"
+    }
+  },
+  "lastUpdatedTime": {
+    "$date": {
+      "$numberLong": "1652054368543"
+    }
+  },
+  "_class": "edu.cmu.demo.entity.Item"
+},{
+  "_id": {
+    "$oid": "62785987b727f7143e9ba2ba"
+  },
+  "name": "oyster",
+  "category": "seafood",
+  "quantity": 123,
+  "comment": "123 ounce oyster",
+  "price": 4.89,
+  "createTime": {
+    "$date": {
+      "$numberLong": "1652054407644"
+    }
+  },
+  "lastUpdatedTime": {
+    "$date": {
+      "$numberLong": "1652054407644"
+    }
+  },
+  "_class": "edu.cmu.demo.entity.Item"
+},{
+  "_id": {
+    "$oid": "6278599bb727f7143e9ba2bb"
+  },
+  "name": "bean",
+  "category": "vegetable",
+  "quantity": 123,
+  "comment": "123 bean",
+  "price": 3.09,
+  "createTime": {
+    "$date": {
+      "$numberLong": "1652054427675"
+    }
+  },
+  "lastUpdatedTime": {
+    "$date": {
+      "$numberLong": "1652054427675"
+    }
+  },
+  "_class": "edu.cmu.demo.entity.Item"
+},{
+  "_id": {
+    "$oid": "627859b2b727f7143e9ba2bc"
+  },
+  "name": "eggplant",
+  "category": "vegetable",
+  "quantity": 390,
+  "comment": "390 eggplant\n",
+  "price": 2.34,
+  "createTime": {
+    "$date": {
+      "$numberLong": "1652054450220"
+    }
+  },
+  "lastUpdatedTime": {
+    "$date": {
+      "$numberLong": "1652054450220"
+    }
+  },
+  "_class": "edu.cmu.demo.entity.Item"
+},{
+  "_id": {
+    "$oid": "627859c7b727f7143e9ba2bd"
+  },
+  "name": "pepper",
+  "category": "vegetable",
+  "quantity": 125,
+  "comment": "125 super hot pepper",
+  "price": 0.99,
+  "createTime": {
+    "$date": {
+      "$numberLong": "1652054471072"
+    }
+  },
+  "lastUpdatedTime": {
+    "$date": {
+      "$numberLong": "1652054471072"
+    }
+  },
+  "_class": "edu.cmu.demo.entity.Item"
+},{
+  "_id": {
+    "$oid": "627859deb727f7143e9ba2be"
+  },
+  "name": "sweet potato",
+  "category": "vegetable",
+  "quantity": 245,
+  "comment": "245 sweet potato",
+  "price": 4.09,
+  "createTime": {
+    "$date": {
+      "$numberLong": "1652054494708"
+    }
+  },
+  "lastUpdatedTime": {
+    "$date": {
+      "$numberLong": "1652054494708"
+    }
+  },
+  "_class": "edu.cmu.demo.entity.Item"
+},{
+  "_id": {
+    "$oid": "627859eeb727f7143e9ba2bf"
+  },
+  "name": "potato",
+  "category": "vegetable",
+  "quantity": 399,
+  "comment": "399 potato",
+  "price": 3.99,
+  "createTime": {
+    "$date": {
+      "$numberLong": "1652054510566"
+    }
+  },
+  "lastUpdatedTime": {
+    "$date": {
+      "$numberLong": "1652054510566"
+    }
+  },
+  "_class": "edu.cmu.demo.entity.Item"
+},{
+  "_id": {
+    "$oid": "62786528b727f7143e9ba2c0"
+  },
+  "name": "spinach",
+  "category": "vegetable",
+  "quantity": 500,
+  "comment": "500 spinach",
+  "price": 0.99,
+  "createTime": {
+    "$date": {
+      "$numberLong": "1652057384660"
+    }
+  },
+  "lastUpdatedTime": {
+    "$date": {
+      "$numberLong": "1652057384660"
+    }
+  },
+  "_class": "edu.cmu.demo.entity.Item"
+},{
+  "_id": {
+    "$oid": "62786545b727f7143e9ba2c1"
+  },
+  "name": "apple",
+  "category": "fruit",
+  "quantity": 350,
+  "comment": "350 apple",
+  "price": 1.99,
+  "createTime": {
+    "$date": {
+      "$numberLong": "1652057413933"
+    }
+  },
+  "lastUpdatedTime": {
+    "$date": {
+      "$numberLong": "1652057413933"
+    }
+  },
+  "_class": "edu.cmu.demo.entity.Item"
+},{
+  "_id": {
+    "$oid": "62786561b727f7143e9ba2c2"
+  },
+  "name": "avocado",
+  "category": "fruit",
+  "quantity": 346,
+  "comment": "346 avocado",
+  "price": 2.99,
+  "createTime": {
+    "$date": {
+      "$numberLong": "1652057441573"
+    }
+  },
+  "lastUpdatedTime": {
+    "$date": {
+      "$numberLong": "1652057441573"
+    }
+  },
+  "_class": "edu.cmu.demo.entity.Item"
+},{
+  "_id": {
+    "$oid": "62786577b727f7143e9ba2c3"
+  },
+  "name": "banana",
+  "category": "fruit",
+  "quantity": 6000,
+  "comment": "6000 banana",
+  "price": 7.99,
+  "createTime": {
+    "$date": {
+      "$numberLong": "1652057463306"
+    }
+  },
+  "lastUpdatedTime": {
+    "$date": {
+      "$numberLong": "1652057463306"
+    }
+  },
+  "_class": "edu.cmu.demo.entity.Item"
+},{
+  "_id": {
+    "$oid": "6278658fb727f7143e9ba2c4"
+  },
+  "name": "watermelon",
+  "category": "fruit",
+  "quantity": 6799,
+  "comment": "",
+  "price": 9.99,
+  "createTime": {
+    "$date": {
+      "$numberLong": "1652057487158"
+    }
+  },
+  "lastUpdatedTime": {
+    "$date": {
+      "$numberLong": "1652057487158"
+    }
+  },
+  "_class": "edu.cmu.demo.entity.Item"
+},{
+  "_id": {
+    "$oid": "627865aab727f7143e9ba2c5"
+  },
+  "name": "beer",
+  "category": "beverage",
+  "quantity": 60000,
+  "comment": "6000 can beer",
+  "price": 1.99,
+  "createTime": {
+    "$date": {
+      "$numberLong": "1652057514291"
+    }
+  },
+  "lastUpdatedTime": {
+    "$date": {
+      "$numberLong": "1652057514291"
+    }
+  },
+  "_class": "edu.cmu.demo.entity.Item"
+},{
+  "_id": {
+    "$oid": "627865beb727f7143e9ba2c6"
+  },
+  "name": "dr pepper",
+  "category": "beverage",
+  "quantity": 54500,
+  "comment": "54500 dr pepper",
+  "price": 3.49,
+  "createTime": {
+    "$date": {
+      "$numberLong": "1652057534049"
+    }
+  },
+  "lastUpdatedTime": {
+    "$date": {
+      "$numberLong": "1652057534049"
+    }
+  },
+  "_class": "edu.cmu.demo.entity.Item"
+},{
+  "_id": {
+    "$oid": "627865ddb727f7143e9ba2c7"
+  },
+  "name": "pancake",
+  "category": "cereal",
+  "quantity": 34500,
+  "comment": "pancake",
+  "price": 3.99,
+  "createTime": {
+    "$date": {
+      "$numberLong": "1652057565183"
+    }
+  },
+  "lastUpdatedTime": {
+    "$date": {
+      "$numberLong": "1652057565183"
+    }
+  },
+  "_class": "edu.cmu.demo.entity.Item"
+}]
